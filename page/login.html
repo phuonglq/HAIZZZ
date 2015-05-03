@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!--css styles-->
+    <link href="../css/login.css" rel="stylesheet" type="text/css"/>
+
+    <!--libs js-->
+    <script src="../libs/angular.min.js"></script>
+    <script src="../libs/ngFacebook.js"></script>
+
+    <!--code js-->
+    <script src="../js/login.js"></script>
+
+</head>
+<body ng-app="login" ng-controller="mainLogin">
+<!--<div>-->
+    <!--<h2>Login</h2>-->
+    <!--<button id="login-btn" ng-click="login()">-->
+        <!--<span ng-if="status">Logout</span>-->
+        <!--<span ng-if="!status">Login</span>-->
+    <!--</button>-->
+        <!--<span ng-if="status" class="message">-->
+            <!--You are <strong>Logged in</strong> as <em>{{user.first_name}} {{user.last_name}}</em>-->
+        <!--</span>-->
+        <!--<span ng-if="!status" class="message">-->
+            <!--You are <strong>not</strong> logged in.-->
+        <!--</span>-->
+<!--</div>-->
+<!--<div ng-show="status">-->
+    <!--<h2>Friends via cachedApi:</h2>-->
+    <!--<button id="friends-btn" ng-click="getFriends()">Get friends</button>-->
+    <!--<div ng-show="friends">-->
+        <!--<h3>List of friends:</h3>-->
+        <!--<ul id="friend-list">-->
+            <!--<li ng-repeat="friend in friends">{{friend.name}}</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+<section>
+    <ul id='social'>
+        <h2>{{loginTxt}}</h2>
+        <li>
+            <div class='shadow entypo-facebook' ng-click="login()"></div>
+            <span>{{facebookTxt}}</span>
+        </li>
+        <li>
+            <div class='shadow entypo-twitter'></div>
+            <span>{{twitterTxt}}</span>
+        </li>
+        <li>
+            <div class='shadow entypo-gplus'></div>
+            <span>{{googlePlusTxt}}</span>
+        </li>
+    </ul>
+</section>
+</body>
+</html>
